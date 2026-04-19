@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading Journal For Me</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 52px 24px 100px;
+    }
+
+    .index-link {
+      position: fixed;
+      top: 16px;
+      left: 18px;
+      font-size: 13px;
+      color: #999;
+      text-decoration: none;
+    }
+
+    .index-link:hover {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .top-nav {
+      margin-bottom: 14px;
+    }
+
+    .back-button {
+      display: inline-block;
+      font-size: 13px;
+      color: #999;
+      text-decoration: none;
+      border: 1px solid #ececec;
+      border-radius: 999px;
+      padding: 4px 10px;
+      line-height: 1.4;
+    }
+
+    .back-button:hover {
+      color: #111;
+      border-color: #dcdcdc;
+      background: #fafafa;
+    }
+
+    .name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #111;
+      margin-bottom: 2px;
+    }
+
+    .updated {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 28px;
+    }
+
+    .intro p {
+      font-size: 15px;
+      color: #111;
+      line-height: 1.65;
+      margin-bottom: 8px;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e8e8e8;
+      margin: 36px 0 24px;
+    }
+
+    .section-label {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 4px;
+    }
+
+    tr {
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    tr:last-child {
+      border-bottom: none;
+    }
+
+    .year {
+      font-size: 14px;
+      color: #bbb;
+      padding: 11px 0;
+      width: 52px;
+      vertical-align: top;
+    }
+
+    .title {
+      font-size: 15px;
+      color: #111;
+      padding: 11px 16px 11px 0;
+      vertical-align: top;
+    }
+
+    .date {
+      font-size: 14px;
+      color: #bbb;
+      padding: 11px 0;
+      text-align: right;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #999;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-nav">
+      <a class="back-button" href="sideportfolio.html">Back</a>
+    </div>
+    <div class="name">Reading Journal For Me</div>
+    <div class="updated" id="updatedText">Updated today</div>
+
+    <div class="intro">
+      <p>Documenting every book I read.</p>
+      <p>I know I am reading wrong so bear with me.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div id="journalPanel">
+      <div class="section-label">Books Read</div>
+      <table>
+        <tbody>
+          <tr>
+            <td class="year">2026</td>
+            <td class="title">Number Go Up</td>
+            <td class="date">03/20, 11:00 AM</td>
+          </tr>
+          <tr>
+            <td class="year"></td>
+            <td class="title">Mastering Ethereum: Developing DApps.</td>
+            <td class="date"> (In-progress, About 40% done)</td>
+          </tr>
+          <tr>
+            <td class="year"></td>
+            <td class="title">Atomic Habits</td>
+            <td class="date">(In-progress, About 10% done)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
