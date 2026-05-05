@@ -1,1 +1,1 @@
-﻿See work at this site. 
+Find my experience, projects and interests.
